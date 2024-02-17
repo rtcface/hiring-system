@@ -1,4 +1,4 @@
-import MenuLink from "@/app/ui/inbox/share/menuLink/menuLink";
+import { MenuLink } from "@/app/ui";
 import styles from "./sidebar.module.css";
 import Image from "next/image";
 import { MdOutlineWork } from "react-icons/md";
@@ -21,7 +21,7 @@ const menuItems = [
   },
 ];
 
-const Sidebar = () => {
+export const Sidebar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.user}>
@@ -50,4 +50,3 @@ const Sidebar = () => {
     </div>
   );
 };
-export default Sidebar;
