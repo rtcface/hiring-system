@@ -9,7 +9,7 @@ interface Props {
   icon: JSX.Element;
 }
 
-const MenuLink = ({ path, icon, title }: Props) => {
+export const MenuLink = ({ path, icon, title }: Props) => {
   const pathName = usePathname();
   //console.log(pathName)
   return (
@@ -22,4 +22,3 @@ const MenuLink = ({ path, icon, title }: Props) => {
     </Link>
   );
 };
-export default MenuLink;

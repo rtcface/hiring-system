@@ -1,6 +1,5 @@
 import styles from "@/app/ui/inbox/inbox.module.css";
-import Sidebar from "../ui/inbox/sidebar/sidebar";
-import Navbar from "../ui/inbox/navbar/navbar";
+import { Sidebar, Navbar } from "@/app/ui/inbox";
 
 const Layout = ({
   children,
