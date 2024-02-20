@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface Props {
   data: ListSimple[];
 }
@@ -8,27 +10,30 @@ export const List = ({ data }: Props) => {
         <div className="inline-block min-w-full shadow rounded-lg overflow-hidden">
           <table className="min-w-full leading-normal">
             <thead>
-              <tr>
-                <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+              <tr className="bg-slate-800">
+                <th className="px-5 py-3 border-b-2 border-gray-200  text-left text-xs font-semibold text-gray-100 uppercase tracking-wider">
                   OCID
                 </th>
-                <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                <th className="px-5 py-3 border-b-2 border-gray-200  text-left text-xs font-semibold text-gray-100 uppercase tracking-wider">
                   Fecha
                 </th>
-                <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                <th className="px-5 py-3 border-b-2 border-gray-200  text-left text-xs font-semibold text-gray-100 uppercase tracking-wider">
                   Tipo
                 </th>
-                <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                <th className="px-5 py-3 border-b-2 border-gray-200  text-left text-xs font-semibold text-gray-100 uppercase tracking-wider">
                   Titulo
                 </th>
-                <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                <th className="px-5 py-3 border-b-2 border-gray-200  text-left text-xs font-semibold text-gray-100 uppercase tracking-wider">
                   Monto
                 </th>
               </tr>
             </thead>
             <tbody>
               {data.map((item) => (
-                <tr className="bg-slate-800 hover:bg-slate-400 transition-all text-gray-400">
+                <tr
+                  key={item.ocid}
+                  className="bg-slate-800 hover:bg-slate-700 transition-all text-gray-400"
+                >
                   <td className="px-5 py-5 border-b border-gray-300 text-sm">
                     <div className="flex items-center">
                       <div className="ml-3">
@@ -58,8 +63,8 @@ export const List = ({ data }: Props) => {
               ))}
             </tbody>
           </table>
-          <div className="px-5 py-5 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between          ">
-            <span className="text-xs xs:text-sm text-gray-900">
+          <div className="px-5 py-5 bg-slate-800 border-t flex flex-col xs:flex-row items-center xs:justify-between          ">
+            <span className="text-xs xs:text-sm text-gray-100">
               Showing 1 to 4 of 50 Entries
             </span>
             <div className="inline-flex mt-2 xs:mt-0">

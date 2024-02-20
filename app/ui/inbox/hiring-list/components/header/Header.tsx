@@ -1,6 +1,6 @@
 export const Header = () => {
   return (
-    <div className=" flex items-center justify-between pb-6">
+    <div className=" flex items-center justify-between pb-3 bg-slate-800 p-5 rounded-lg">
       <div>
         <h2 className="text-gray-300 font-semibold">Lista de contrataciones</h2>
         <span className="text-xs">Todas las contrataciones en sistema</span>
@@ -14,9 +14,9 @@ export const Header = () => {
             fill="currentColor"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             />
           </svg>
           <input

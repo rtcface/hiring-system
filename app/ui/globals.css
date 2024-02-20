@@ -23,7 +23,7 @@
     --textSoft: #b7bac1;
   }
 }
-body{
+body {
   background-color: var(--bg);
   color: var(--text);
 }
@@ -34,7 +34,7 @@ body{
   }
 }
 
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
