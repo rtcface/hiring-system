@@ -37,7 +37,12 @@ export const List = ({ data }: Props) => {
                   <td className="px-5 py-5 border-b border-gray-300 text-sm">
                     <div className="flex items-center">
                       <div className="ml-3">
-                        <p className=" whitespace-no-wrap">{item.ocid}</p>
+                        <Link
+                          href={`/hiring/${item.ocid}`}
+                          className=" whitespace-no-wrap"
+                        >
+                          {item.ocid}
+                        </Link>
                       </div>
                     </div>
                   </td>

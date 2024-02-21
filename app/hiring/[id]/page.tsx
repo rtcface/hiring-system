@@ -4,5 +4,9 @@ import { GiBuyCard } from "react-icons/gi";
 import { MdAssignmentReturned } from "react-icons/md";
 
 export default function HiringPage() {
-  return <></>;
+  return (
+    <>
+      <span>HiringPage</span>
+    </>
+  );
 }
